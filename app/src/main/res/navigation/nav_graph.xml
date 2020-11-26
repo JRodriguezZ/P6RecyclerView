@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recyclerDesafiosFragment">
+
+    <fragment
+        android:id="@+id/recyclerDesafiosFragment"
+        android:name="com.example.p6recyclerview.recyclerDesafiosFragment"
+        android:label="fragment_recycler_desafios"
+        tools:layout="@layout/fragment_recycler_desafios" >
+        <action
+            android:id="@+id/action_recyclerDesafiosFragment_to_mostrarDesafioFragment"
+            app:destination="@id/mostrarDesafioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mostrarDesafioFragment"
+        android:name="com.example.p6recyclerview.mostrarDesafioFragment"
+        android:label="fragment_mostrar_desafio"
+        tools:layout="@layout/fragment_mostrar_desafio" />
+</navigation>
